@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0" />
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/sales.css" />
+		<title>品牌团详情页</title>
+		<script src="js/jquery-2.2.1.min.js"></script>
+		<script src="js/public.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/sales.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+            (function(b, c) {
+                var d = b.documentElement,
+                    resizeEvt = 'orientationchange' in c ? 'orientationchange' : 'resize',
+                    recalc = function() {
+                        var a = d.clientWidth
+                        if (!a) return;
+                        d.style.fontSize = (20 * (a / 320)) > 40 ? 40 + "px" : (20 * (a / 320)) + 'px'
+                    },
+                    anime = c.requestAnimationFrame || c.webkitRequestAnimationFrame || c.mozRequestAnimationFrame || c.oRequestAnimationFrame ||
+                function(e) {
+                    return setTimeout(e, 16.67)
+                };
+                if (!b.addEventListener) return;
+                c.addEventListener(resizeEvt, recalc, false);
+                b.addEventListener('DOMContentLoaded', recalc, false)
+            })(document, window);
+     	</script>
+	</head>
+	<body>
+		<div class="mainai">
+			<div class="dinglan">
+				<div class="fanhuiimg"><img src="img/address/btn_back_normal.png"/></div>
+				<div class="brandbiaoti"style="width: 91px;">品牌团详情</div>
+				<div class="gouwuche"><img src="img/btn_cart_normal.png"/></div>
+			</div>
+			<div class="zhuneirong">
+				<div class="brandimg">
+					<img src=""/ class="brandimgdiv">
+					<div class="brandhengtiao"><div class="tegong">' + brand.tittle + '</div><div class="daojishi"></div><div class="timeimg"><img src="img/icon_clock.png"/></div></div>
+				</div>
+				<div class="brandcontent"></div>
+			</div>
+		</div>
+	</body>
+</html>

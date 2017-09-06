@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0" />
+		<title>发表评价</title>
+		<link rel="stylesheet" type="text/css" href="css/orderlist.css"/>
+		<link rel="stylesheet" type="text/css" href="css/orderpublic.css"/>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>		
+		<script src="js/jquery-2.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/order.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+            (function(b, c) {
+                var d = b.documentElement,
+                    resizeEvt = 'orientationchange' in c ? 'orientationchange' : 'resize',
+                    recalc = function() {
+                        var a = d.clientWidth
+                        if (!a) return;
+                        d.style.fontSize = (20 * (a / 320)) > 40 ? 40 + "px" : (20 * (a / 320)) + 'px'
+                    },
+                    anime = c.requestAnimationFrame || c.webkitRequestAnimationFrame || c.mozRequestAnimationFrame || c.oRequestAnimationFrame ||
+                function(e) {
+                    return setTimeout(e, 16.67)
+                };
+                if (!b.addEventListener) return;
+                c.addEventListener(resizeEvt, recalc, false);
+                b.addEventListener('DOMContentLoaded', recalc, false)
+            })(document, window);
+        </script>
+	</head>
+	<body style="padding-bottom: 47px;">
+		<div class="main">
+			<div class="dinglan">
+				<div class="fanhui"><img src="img/address/btn_back_normal.png"/></div>
+				<div class="dlbiaoti"style="width: 80px;">发表评价</div>
+			</div>
+			<div class="contentAndRated">
+				<div class="goodsContent-rated">
+					<div class="goodsimg">
+						<img src="img/sales/f332a3e365bb3b43c8bb0cddd33ae970.jpg"/>
+					</div>
+					<div class="goodscontent">
+						<div class="goodsTittle">数码兽闯入人类世界进行破坏被选召的孩子们集结在一起重新战斗的故事</div>
+						<div class="goodsMoney">￥<span>88.00</span></div>
+						<div class="goodsNumber">X<span>1</span></div>
+						<div class="goodsKouwei">口味:<span>原味</span></div>
+					</div>		
+				</div>
+				<div class="inputRatedDiv">
+					<input type="text" name="inputRatedDiv-Text" id="inputRatedDiv-Text" value="" />
+				</div>
+			</div>
+			<div class="contentAndRated">
+				<div class="goodsContent-rated">
+					<div class="goodsimg">
+						<img src="img/sales/f332a3e365bb3b43c8bb0cddd33ae970.jpg"/>
+					</div>
+					<div class="goodscontent">
+						<div class="goodsTittle">数码兽闯入人类世界进行破坏被选召的孩子们集结在一起重新战斗的故事</div>
+						<div class="goodsMoney">￥<span>88.00</span></div>
+						<div class="goodsNumber">X<span>1</span></div>
+						<div class="goodsKouwei">口味:<span>原味</span></div>
+					</div>		
+				</div>
+				<div class="inputRatedDiv">
+					<input type="text" name="inputRatedDiv-Text" id="inputRatedDiv-Text" value="" />
+				</div>
+			</div>
+			<div class="bottomDiv">
+				<div class="bottomDiv-select"><img src="img/address/normal.png"/></div><span style="line-height: 47px;">匿名评价</span>
+				<div class="fabiaopingjia">发表评价</div>
+			</div>
+			<!--弹窗系列-->
+			<div class="toast"><p class="toast_banben">所有商品都需要评价哦</p></div>
+			<div class="tanchuangbg"></div>
+			<div class="deletetanchuang">
+			<div class="settanchuang_content">
+				<p>有评价未完成,是否离开?</p>
+			</div>
+			<div class="kftanchuang_button">
+				<div class="button_guang"><p>取消</p></div>
+				<div class="button_likai"><p>确定</p></div>
+			</div>
+			</div>
+		</div>
+		</div>
+	</body>
+</html>

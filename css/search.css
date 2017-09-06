@@ -1,0 +1,102 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family:"微软雅黑";
+}
+.main{
+	max-width: 640px;
+	margin: 0 auto;
+}
+.dinglan{
+	height: 42px;
+	border-bottom: 1px solid #E2E2E2;
+	position: relative;
+}
+.dinglan_left{
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    width: 15px;
+    z-index: 3;
+}
+.fanhuimg{
+	width: 8px;
+}
+.fanhuimg img{
+	width: 100%;
+}
+.dinglan_right{
+    width: 38px;
+    position: absolute;
+    top: 10px;
+    right: 0px;
+}
+.sousuofont{
+	font-size: 13px;
+	color: #353535;
+}
+.dinglan_middle{
+	padding: 8px 51px 8px 35px;
+	position: relative;
+}
+.searchdiv{
+	text-indent: 30px;
+    width: 100%;
+    height: 26px;
+    background-color: #E2E2E2;
+    border-radius: 10px;
+     -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+     border: 0px;
+}
+.fangdajing{
+    width: 12px;
+    position: absolute;
+    top: 12px;
+    left: 46px;
+}
+.deleteimg{
+    width: 13px;
+    position: absolute;
+    top: 14px;
+    right: 60px;
+	display: none;
+}
+.deleteimg img{
+	width: 100%;
+}
+.fangdajing img{
+	width: 100%;
+}
+
+.jilu{
+	margin: 0 7px;
+	color: #353535;
+	font-size: 13px;
+}
+.jilu li{
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 1px solid #F8F8F8;
+	text-indent: 15px;
+}
+.qingkong{
+	width: 121px;
+	height: 20px;
+	line-height: 18px;
+	margin-top: 15px;
+	margin: 15px auto;
+	color: #353535;
+	font-size: 14px;
+}
+.qingkongimg{
+	width: 16px;
+	padding-right: 5px;
+	float: left;
+}
+.qingkongimg img{
+	width: 100%;
+}
+.clearfont{
+	font-size: 13px;
+
+}

@@ -1,0 +1,32 @@
+	[
+	    {
+	        "id": 0,
+	        "name": "谢尚鹏",
+	        "phone": "15705926867",
+	        "province": "福建省",
+	        "city": "厦门市",
+	        "town":"湖里区",
+	        "addressDetail": "谢厝街南环路",
+	        "status":0
+	    },
+	    {
+	        "id": 3,
+	        "name": "蔡伟灿",
+	        "phone": "13205926898",
+	        "province": "福建省",
+	        "city": "泉州市",
+	        "town":"洛江区",
+	        "addressDetail": "夜店小王子",
+	        "status":1
+	    },
+	   	{
+	        "id": 9,
+	        "name": "洪灿阳",
+	        "phone": "15705926867",
+	        "province": "福建省",
+	        "city": "泉州市",
+	        "town":"南安市",
+	        "addressDetail": "第一铁阳",
+	         "status":0
+	    }
+	]

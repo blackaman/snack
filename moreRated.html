@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0" />
+		<title>喵亲口碑</title>
+		<link rel="stylesheet" type="text/css" href="css/orderpublic.css"/>
+		<script src="js/jquery-2.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/order.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+            (function(b, c) {
+                var d = b.documentElement,
+                    resizeEvt = 'orientationchange' in c ? 'orientationchange' : 'resize',
+                    recalc = function() {
+                        var a = d.clientWidth
+                        if (!a) return;
+                        d.style.fontSize = (20 * (a / 320)) > 40 ? 40 + "px" : (20 * (a / 320)) + 'px'
+                    },
+                    anime = c.requestAnimationFrame || c.webkitRequestAnimationFrame || c.mozRequestAnimationFrame || c.oRequestAnimationFrame ||
+                function(e) {
+                    return setTimeout(e, 16.67)
+                };
+                if (!b.addEventListener) return;
+                c.addEventListener(resizeEvt, recalc, false);
+                b.addEventListener('DOMContentLoaded', recalc, false)
+            })(document, window);
+        </script>
+	</head>
+	<body>
+		<div class="main">
+			<div class="dinglan">
+				<div class="fanhuiimg"><img src="img/address/btn_back_normal.png"/></div>
+				<div class="dlbiaoti"style="width: 80px;">喵亲口碑</div>
+			</div>
+			<div class="pingjiacontent">
+				<div class="user"><div class="touxiangdiv"><img src="img/good detail/icon_wb_normal.png"/></div><span>黑人</span></div>
+				<div class="content">《ONE PIECE》（海贼王、航海王）简称“OP”，是日本漫画家尾田荣一郎作画的少年漫画作品。在《周刊少年Jump》1997年34号开始连载。描写了拥有橡皮身体戴草帽的青年路飞，以成为“海贼王”为目标和同伴在大海展开冒险的故事。</div>
+				</div>
+			<div class="pingjiacontent">
+				<div class="user"><div class="touxiangdiv"><img src="img/good detail/icon_kj_pressed.png"/></div><span>白人</span></div>
+				<div class="content">描写了拥有橡皮身体戴草帽的青年路飞</div>
+			</div>
+		</div>
+	</body>
+</html>

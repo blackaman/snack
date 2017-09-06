@@ -1,0 +1,59 @@
+	[
+		{
+			"mainClass": "坚果",
+			"subClass": "全部"
+		}, {
+			"mainClass": "坚果",
+			"subClass": "花生"
+		}, {
+			"mainClass": "坚果",
+			"subClass": "果仁"
+		}, {
+			"mainClass": "坚果",
+			"subClass": "核桃"
+		}, {
+			"mainClass": "坚果",
+			"subClass": "瓜子"
+		}, {
+			"mainClass": "坚果",
+			"subClass": "炒货"
+		}, {
+	
+			"mainClass": "蜜饯",
+			"subClass": "全部"
+		}, {
+			"mainClass": "蜜饯",
+			"subClass": "提子"
+		}, {
+			"mainClass": "蜜饯",
+			"subClass": "果干"
+		}, {
+	
+			"mainClass": "蜜饯",
+			"subClass": "橄榄"
+		}, {
+	
+			"mainClass": "蜜饯",
+			"subClass": "梅"
+		}, {
+	
+			"mainClass": "饼干",
+			"subClass": "全部"
+		}, {
+	
+			"mainClass": "饼干",
+			"subClass": "威化饼"
+		}, {
+	
+			"mainClass": "饼干",
+			"subClass": "曲奇"
+		}, {
+	
+			"mainClass": "饼干",
+			"subClass": "奶油夹"
+		}, {
+	
+			"mainClass": "饼干",
+			"subClass": "鸡蛋卷"
+		}
+	]

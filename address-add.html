@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0" />
+		<title>新增收货地址</title>
+		<link rel="stylesheet" type="text/css" href="css/address.css"/>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/PCASClass.js" type="text/javascript" charset="gb2312"></script>
+		<script src="js/address.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="main">
+			<div class="header">
+				<div class="headerl"><img src="img/address/btn_back_normal.png"/></div>
+				<div class="headerr">保存</div>
+			</div>
+			<div class="detaiCont">
+				<div class="addcontent" data-id="'+address.id+'">
+					<ul>
+						<li><span class="addcontent_font">收货人</span><input type="text" name="shouhuoren" id="shouhuoren" value="" /></span></li>
+						<li><span class="addcontent_font">手机号码</span><input type="text" name="shoujihaoma" id="shoujihaoma" value="" maxlength="11" /></span></li>
+						<li>
+							<span class="shengshiqu">省市地址</span>
+						    <span><select name="province3" class="sheng"></select></span>
+							<span class="shidiv"><select name="city3" class="shi"></select></span>
+							<span><select name="area3" class="qu"></select></span>
+						</li>
+						<li><span class="addcontent_font">街道地址</span><input type="text" name="jiedaodizhi" id="jiedaodizhi" value="" /></span></li>
+					</ul>
+				</div>
+				<div class="moren">
+					<div class="moren_img">
+						<img src="img/address/selected.png" style="display: none;" class="hideimg"/>
+						<img src="img/address/normal.png" class="showimg"/>
+					</div>
+					<span class="moren_font">设为默认</span>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			new PCAS("province3","city3","area3");
+		</script>
+	</body>
+</html>

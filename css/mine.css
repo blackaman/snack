@@ -1,0 +1,237 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: "微软雅黑";
+}
+.main{
+	max-width: 640px;
+	margin: 0px auto;
+	position: relative;
+}
+/*===用户模块===*/
+.header{
+	width: 100%;
+	height: 100%;
+	background: url(../img/wode/bg_user.png);
+	text-align: center;
+	position: relative;
+}
+.header_right{
+	width:5%;
+	float: right;
+	position: absolute;
+	top: 13px;
+	right: 15px;
+}
+.user{
+	width: 100%;
+	height: 100%;
+	padding-top: 25px;
+	padding-bottom: 1rem;
+}
+#touxiang{
+	width: 4rem;
+    height: 4rem;
+    margin: auto;
+    margin-bottom: 17px;
+    overflow: hidden;
+    border-radius: 50px;
+}
+#touxiang img{
+	width: 100%;
+}
+#username{
+	color: #000000;
+	font-size: 15px;
+}
+/*===订单===*/
+.dingdan{
+	width: 100%;
+	height: 3rem;
+	margin-top: 10px;
+	border-top: 1px solid #F8F8F8;
+	border-bottom: 1px solid #F8F8F8;
+	background-color: #FFFFFF;
+}
+.dingdan ul
+{
+	width: 100%;
+}
+.dingdan li
+{
+	text-align: center;
+	width: 25%;
+	float: left;
+	display: block;
+}
+.dingdan img
+{
+	width: 27.5%;
+	padding: 12px 0 5px;
+}
+.dingdan p
+{
+	font-size: 11px;
+	color: #353535;
+}
+/*===所有栏目===*/
+.lanmu li{
+	width: 100%;
+	height: 43px;
+	line-height: 43px;
+	list-style: none;
+	background-color: #FFFFFF;
+	border-bottom: 1px solid #F8F8F8;
+}
+
+.lanmu_icon{
+	width: 5.625%;
+	float: left;
+	padding:11px 10px 0 15px ;
+}
+.lanmu_name,.set_name{
+	float: left;
+	font-size: 14px;
+	color: #353535;
+}
+
+.lanmu_enter{
+    width: 38px;
+    height: 100%;
+    float: right;
+    background: url(../img/wode/icon_arrow.png)center no-repeat;
+    background-size: 15%;
+}
+#dianhua{
+	font-size: 10px;
+	color: #A0A0A0;
+	float: right;
+}
+.shoucang,.kefu,.shezhi,.qingchuhuancun
+{
+	margin-top: 10px;
+}
+
+/*===设置===*/
+.set_name{
+	padding-left: 15px;
+}
+#set_huancun,.set_right
+{
+	float: right;
+	padding-right: 15px;
+	color: #A0A0A0;
+	font-size: 10px;
+}
+.exitdiv{
+	margin: 25px auto;
+	width: 90.625%;
+	height: 34px;
+}
+#exit
+{
+	border-radius:10px;
+	-webkit-appearance:none;
+	background-color: #E2E2E2;
+	border: 1px solid #D6D6D6;
+	width: 100%;
+	height: 34px;
+	text-align: center;
+}
+/*===意见反馈===*/
+.opinion_admin{
+	width: 87.1875%;
+	min-height: 51px;
+	height: 100%;
+	margin: 20px 26px 0 15px;
+}
+.adminimgdiv
+{
+	width: 14%;
+	float: left;
+	padding-right: 8px;
+}
+.opinion_img{
+	width: 100%;
+}
+.adminkuang
+{
+	float: left;
+	width:83%;
+	height: 100%;
+}
+.adminbg
+{
+	width: 100%;
+	min-height: 51px;
+	height: 100%;
+    background: url(../img/opinion/bg_feedback_pink@2x.png)no-repeat;
+    background-size: 17%;
+    text-indent: 10px;
+    line-height: 51px;
+}
+.opinion_user
+{
+	width: 87.1875%;
+	min-height: 51px;
+	height: 100%;
+	margin: 20px 15px 0 26px;
+}
+.userimgdiv{
+	width: 14%;
+	float: right;
+	padding-left: 8px;
+}
+.userkuang{
+	float: left;
+	width:83%;
+	height: 100%;
+}
+.userbg
+{
+	min-height: 51px;
+	height: 100%;
+    background: url(../img/opinion/bg_feedback_gray@2x.png)right no-repeat;
+    background-size: 17%;
+}
+
+.opinionfooter{
+	width: 100%;
+	height: 58px;
+	position: fixed;
+	bottom: 0;
+	border: 1px solid #D6D6D6;
+	background-color: #E2E2E2;
+}
+.opinion_textdiv{
+	width: 78.125%;
+	height: 41px;
+	padding:8px 0 8px 15px;
+	float: left;
+}
+#opinion_text{
+	width: 100%;
+	height: 100%;
+	text-indent: 13px;
+	border-radius: 10px;
+	-webkit-appearance: none;
+	background: #FFFFFF;
+	border: 1px solid #D6D6D6;
+	font-size: 13px;
+}
+.opinion_senddiv{
+    width: 16.875%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    line-height: 58px;
+    font-size:14px;
+    color:#000000;
+}
+/*//关于小喵*/
+.about{
+	padding: 19px 15px 20px 15px;
+	color: #000000;
+	font-size: 14px;
+	line-height: 20px;
+}

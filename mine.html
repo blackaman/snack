@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>我的</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0" />
+		<meta name="format-detection" content="telephone=no" />
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/mine.css" />
+		<script src="js/jquery-2.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/public.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/mine.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+            (function(b, c) {
+                var d = b.documentElement,
+                    resizeEvt = 'orientationchange' in c ? 'orientationchange' : 'resize',
+                    recalc = function() {
+                        var a = d.clientWidth
+                        if (!a) return;
+                        d.style.fontSize = (20 * (a / 320)) > 40 ? 40 + "px" : (20 * (a / 320)) + 'px'
+                    },
+                    anime = c.requestAnimationFrame || c.webkitRequestAnimationFrame ||  c.mozRequestAnimationFrame || c.oRequestAnimationFrame ||
+                function(e) {
+                    return setTimeout(e, 16.67)
+                };
+                if (!b.addEventListener) return;
+                c.addEventListener(resizeEvt, recalc, false);
+                b.addEventListener('DOMContentLoaded', recalc, false)
+            })(document, window);
+        </script>
+	</head>
+	<body style="margin-bottom:14%;background-color: #F8F8F8">
+		<div class="main">
+			<div class="header">
+				<a href="shop.html"><img src="img/btn_cart_normal.png" class="header_right" /></a>
+				<div class="user">
+					<div id="touxiang"><img src="img/wode/default_photo.png"/></div>
+					<div id="username"><span class="login">登录</span>/<span class="zhuce">注册</span></div>
+				</div>
+			</div>
+			<div class="dingdan">
+				<ul>
+					<li><img src="img/wode/icon_pay.png" alt="" /><p>待付款</p></li>
+					<li><img src="img/wode/icon_delivery.png" alt="" /><p>待发货</p></li>
+					<li><img src="img/wode/icon_logistics.png" alt="" /><p>待收货</p></li>
+					<li><img src="img/wode/icon_evaluate.png" alt="" /><p>待评价</p></li>
+				</ul>
+			</div>
+			<div class="lanmu">
+				<ul>
+					<li class="allorder"><img src="img/wode/icon_order.png" alt="" class="lanmu_icon" />
+						<span class="lanmu_name">零食小喵商城订单</span><span class="lanmu_enter"></span>
+					</li>
+					<li class="taobao"><img src="img/wode/icon_tb_order.png" alt="" class="lanmu_icon" />
+						<span class="lanmu_name">淘宝订单</span><span class="lanmu_enter"></span>
+					</li>
+					<li class="shoucang"><img src="img/wode/icon_evaluate.png" alt="" class="lanmu_icon" />
+						<span class="lanmu_name">我的收藏</span><span class="lanmu_enter"></span>
+					</li>
+					<li class="address"><img src="img/wode/icon_address_mine.png" alt="" class="lanmu_icon" />
+						<span class="lanmu_name">地址管理</span><span class="lanmu_enter"></span>
+					</li>
+					<li class="kefu"><img src="img/wode/icon_service.png" alt="" class="lanmu_icon" />
+						<span class="lanmu_name">零食官方客服</span><span class="lanmu_enter"></span><span id="dianhua">0592-5413550</span>
+					</li>
+					<!--<li class="opinion"><img src="img/wode/icon_feedback.png" alt="" class="lanmu_icon" />
+						<span class="lanmu_name">意见反馈</span><span class="lanmu_enter"></span>
+					</li>-->
+					<li class="shezhi"><img src="img/wode/icon_sets.png" alt="" class="lanmu_icon" />
+						<span class="lanmu_name">设置</span><span class="lanmu_enter"></span>
+					</li>
+				</ul>
+			</div>
+			<!--底部tab栏-->
+			<div class="tablan">
+				<ul>
+					<li><img src="img/btn_home_normal.png" id="tablan_shouye"/></li>
+					<li><img src="img/btn_sales_normal.png" id="tablan_remai"/></li>
+					<li><img src="img/btn_subject_normal.png" id="tablan_zhuanti"/></li>
+					<li><img src="img/btn_mine_selected.png" id="tablan_wode"/></li>
+				</ul>
+			</div>
+			<!--客服弹窗-->
+			<div class="tanchuangbg"></div>
+			<div class="kftanchuang">
+				<div class="kftanchuang_content">
+					<p>客服电话:<span>0592-5413550</span></p>
+					<p>客服微信:<span id="weixin">黑人卸帐篷</span></p>
+				</div>
+				<div class="kftanchuang_button">
+					<div class="button_left"><p>复制微信号</p></div>
+					<div class="button_right"><a href="tel:0592-5413550">拨打电话</a></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0" />
+		<title>首页</title>
+		<link rel="stylesheet" href="css/swiper-3.3.1.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" href="css/public.css" />
+		<script src="js/jquery-2.2.1.min.js"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/public.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/swiper-3.3.1.jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+            (function(b, c) {
+                var d = b.documentElement,
+                    resizeEvt = 'orientationchange' in c ? 'orientationchange' : 'resize',
+                    recalc = function() {
+                        var a = d.clientWidth
+                        if (!a) return;
+                        d.style.fontSize = (20 * (a / 320)) > 40 ? 40 + "px" : (20 * (a / 320)) + 'px'
+                    },
+                    anime = c.requestAnimationFrame || c.webkitRequestAnimationFrame || c.mozRequestAnimationFrame || c.oRequestAnimationFrame ||
+                function(e) {
+                    return setTimeout(e, 16.67)
+                };
+                if (!b.addEventListener) return;
+                c.addEventListener(resizeEvt, recalc, false);
+                b.addEventListener('DOMContentLoaded', recalc, false)
+            })(document, window);
+        </script>
+	</head>
+	<body style="margin-bottom:46px;background-color: #F8F8F8">
+		<div class="main">
+			<!--顶部-->
+			<div class="header">
+				<div class="header_left"><div class="header_leftcion"><img src="img/icon_cat.png"/></div></div>
+				<span class="header_middle">
+					<input type="text" name="search" id="search"  placeholder="请输入商品名称或关键字"/>
+					<div class="fangdajing"><img src="img/icon_search.png"/></div>
+					<img src="img/btn_cancel_normal.png" id="deleteimg"/ >
+				</span>
+				<div class="header_right"><div class="header_rightcion"><img src="img/btn_cart_normal.png"/></div></div>
+			</div>
+			<!--Banner栏-->
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="img/banner1.jpg" /></div>
+					<div class="swiper-slide"><img src="img/banner2.jpg" /></div>
+					<div class="swiper-slide"><img src="img/banner3.jpg"  /></div>
+				</div>
+				<!-- 分页器 -->
+				<div class="swiper-pagination"></div>
+			</div>
+			<!--分类-->
+			<div class="fenlei">
+				<ul>
+					<li><span class="fenlei_name"><p class="fenlei_h5">坚果</p><p class="fenlei_p">瓜子/花生/果仁</p></span><div class="fenlei_img"><img src="img/icon_jg.png"/></div></li>
+					<li><span class="fenlei_name"><p class="fenlei_h5">蜜饯</p><p class="fenlei_p">梅/橄榄/果干/枣</p></span><div class="fenlei_img"><img src="img/icon_mj.png"/></div></li>
+					<li><span class="fenlei_name"><p class="fenlei_h5">肉食</p><p class="fenlei_p">猪肉类/牛肉类</p></span><div class="fenlei_img"><img src="img/icon_rs.png"/></div></li>
+					<li><span class="fenlei_name"><p class="fenlei_h5">饼干</p><p class="fenlei_p">曲奇/威化饼</p></span><div class="fenlei_img"><img src="img/icon_bg.png"/></div></li>
+					<li><span class="fenlei_name"><p class="fenlei_h5">糖巧</p><p class="fenlei_p">软糖/棒棒糖</p></span><div class="fenlei_img"><img src="img/icon_tq.png"/></div></li>
+					<li><span class="fenlei_name"><p class="fenlei_h5">冲饮</p><p class="fenlei_p">牛奶/酒水/咖啡</p></span><div class="fenlei_img"><img src="img/icon_cy.png"/></div></li>
+				</ul>
+			</div>
+			<!--品牌团 -->
+			<div class="pinpaiheader">
+				<div class="jieti"><img src="img/icon_dot.png"/></div><p class="pinpaiheader_h3">品牌5折团</p><p class="pinpaiheader_p">独立潮牌为你而生 5折优惠</p>
+			</div>
+			<div class="pinpaicontentdiv">
+			</div>
+			<!--广告位-->
+			<div class="guanggao">
+				<img src="img/btn_lover.png"/ id="guanggaoleft">
+				<img src="img/btn_movie.png"/id="guanggaoright_top">
+				<img src="img/btn_tea.png"/id="guanggaoright_bottoml">
+				<img src="img/btn_beer.png"/id="guanggaoright_bottomr">
+			</div>
+			<!--每日上新-->
+			<div class="shangxinheader">
+				<div class="jieti"><img src="img/icon_dot.png"/></div><p id="shangxinheader_h3">每日上新</p><span><p class="shangxinheader_p">每天十点准时上新 敬请期待</p></span>
+			</div>
+			<div class="shangxincontentdiv"></div>
+			<!--底部tab栏-->
+			<div class="tablan">
+				<ul>
+					<li><div id="tablan_shouye"><img src="img/btn_home_selected.png"/></div></li>
+					<li><div id="tablan_remai"><img src="img/btn_sales_normal.png"/></div></li>
+					<li><div id="tablan_zhuanti"><img src="img/btn_subject_normal.png"/></div></li>
+					<li><div id="tablan_wode"><img src="img/btn_mine_normal.png"/></div></li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>

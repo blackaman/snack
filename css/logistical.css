@@ -1,0 +1,22 @@
+.express{
+	height: 45px;
+	border-top: 10px solid #F8F8F8;
+	padding:15px;
+}
+.express-logo{
+	width: 45px;
+	float: left;
+	padding-right:10px;
+}
+.express-logo img{
+	width: 100%;
+}
+.express-information-name{
+	padding: 4px 0 8px 0;
+}
+.express-information-number span{
+	font-size: 13px;
+}
+*{
+	font-family:"微软雅黑";
+}

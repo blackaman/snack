@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0" />
+		<title>查看物流</title>
+		<link rel="stylesheet" type="text/css" href="css/logistical.css"/>
+		<link rel="stylesheet" type="text/css" href="css/orderpublic.css"/>
+		<script src="js/jquery-2.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/order.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+            (function(b, c) {
+                var d = b.documentElement,
+                    resizeEvt = 'orientationchange' in c ? 'orientationchange' : 'resize',
+                    recalc = function() {
+                        var a = d.clientWidth
+                        if (!a) return;
+                        d.style.fontSize = (20 * (a / 320)) > 40 ? 40 + "px" : (20 * (a / 320)) + 'px'
+                    },
+                    anime = c.requestAnimationFrame || c.webkitRequestAnimationFrame || c.mozRequestAnimationFrame || c.oRequestAnimationFrame ||
+                function(e) {
+                    return setTimeout(e, 16.67)
+                };
+                if (!b.addEventListener) return;
+                c.addEventListener(resizeEvt, recalc, false);
+                b.addEventListener('DOMContentLoaded', recalc, false)
+            })(document, window);
+        </script>
+	</head>
+	<body>
+		<div class="main">
+			<div class="dinglan">
+				<div class="fanhuiimg"><img src="img/address/btn_back_normal.png"/></div>
+				<div class="dlbiaoti" style="width:72px">查看物流</div>
+			</div>
+			<div class="express">
+				<div class="express-logo"><img src="img/address/bg_login_pressed.png"/></div>
+				<div class="express-information">
+					<div class="express-information-name"><strong>圆通速递</strong></div>
+					<div class="express-information-number"><span>运单编号:</span><span>0800956056</span></div>
+				</div>
+			</div>
+			<div>
+				<div class="xiaomiaodiv"> 
+					<div class="taobaoleft"><img src="img/shop/icon_cat.png"/></div>
+					<span class="taobaomiddle">零食小喵</span>
+				</div>
+				<div class="goodsimgdiv">
+					<div class="goodsimg">
+						<img src="img/sales/f332a3e365bb3b43c8bb0cddd33ae970.jpg"/>
+					</div>
+					<div class="goodscontent">
+						<div class="goodstittle">数码兽闯入人类世界进行破坏被选召的孩子们集结在一起重新战斗的故事</div>
+						<div class="goodsmoney">￥<span>88.00</span></div>
+						<div class="goodsnumber">X<span>1</span></div>
+						<div class="goodskouwei">口味:<span>原味</span></div>
+					</div>		
+				</div>
+				<div class="goodsimgdiv">
+					<div class="goodsimg">
+						<img src="img/sales/f332a3e365bb3b43c8bb0cddd33ae970.jpg"/>
+					</div>
+					<div class="goodscontent">
+						<div class="goodstittle">数码兽闯入人类世界进行破坏被选召的孩子们集结在一起重新战斗的故事</div>
+						<div class="goodsmoney">￥<span>88.00</span></div>
+						<div class="goodsnumber">X<span>1</span></div>
+						<div class="goodskouwei">口味:<span>原味</span></div>
+					</div>		
+				</div>
+			</div>
+			<div class="xiaomiaodiv"><span style="padding-left: 15px;">物流跟踪</span></div>
+		</div>
+	</body>
+</html>

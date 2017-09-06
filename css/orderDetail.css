@@ -1,0 +1,79 @@
+.orderInformation{
+    height: 66px;
+    padding: 15px;
+    border-top: 10px solid #F8F8F8;
+}
+.orderInformation-img{
+	width: 20px;
+	float: left;
+}
+.orderInformation-img img{
+	width: 100%;
+}
+.orderInformation-status{
+    height: 27px;
+    line-height: 27px;
+    padding-left: 30px;	
+}
+.orderInformation-logisticalMoney,.orderInformation-money{
+	padding-left: 30px;
+}
+.orderInformation-money{
+	padding-bottom: 5px;
+}
+.oderTimeDiv{
+	padding: 15px;
+	color: #A0A0A0;
+}
+.orderTimeDIV-li{
+	padding-bottom: 5px;
+}
+.shenqingshouhou{
+    width: 70px;
+    height: 31px;
+    line-height: 30px;
+    position: absolute;
+    right: 0;
+    bottom: 4%;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #FF2D4B;
+    color: #FF2D4B;
+}
+/*交易成功*/
+.dealStatusDiv{
+	height: 70px;
+	border-bottom: 10px solid #F8F8F8;
+	border-top: 10px solid #F8F8F8;
+	text-align: center;
+	padding: 25px 0;
+}
+.dealStatusDiv-one{
+	width: 120px;
+	margin: 0 auto;
+	padding-bottom: 15px;
+	height: 30px;
+}
+.dealStatusDiv-one-img{
+	float: left;
+}
+.dealStatusDiv-one-success{
+	float: left;
+	padding-left: 8px;
+	font-size: 20px;
+	color: #FF2D4B;
+	line-height: 30px;
+}
+.paySuccess-money{
+	padding: 25px 0 0 15px;
+}
+.floatr{
+	float: right;
+}
+.bgred{
+	color: #FF2D4B;
+}
+.btn{
+	background-color: #FF2D4B;
+	color: #FFFFFF;
+}

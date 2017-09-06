@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0" />
+		<title>商品详情页</title>
+		<link rel="stylesheet" href="css/goods detail.css" />
+		<link rel="stylesheet" href="css/swiper-3.3.1.min.css" />
+		<link rel="stylesheet" href="css/sales.css" />
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="js/swiper-3.3.1.jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/goods detail.js" type="text/javascript" charset="UTF-8"></script>
+		<script>
+			(function(b, c) {
+				var d = b.documentElement,
+					resizeEvt = 'orientationchange' in c ? 'orientationchange' : 'resize',
+					recalc = function() {
+						var a = d.clientWidth
+						if(!a) return;
+						d.style.fontSize = (20 * (a / 320)) > 40 ? 40 + "px" : (20 * (a / 320)) + 'px'
+					},
+					anime = c.requestAnimationFrame || c.webkitRequestAnimationFrame || c.mozRequestAnimationFrame || c.oRequestAnimationFrame ||
+					function(e) {
+						return setTimeout(e, 16.67)
+					};
+				if(!b.addEventListener) return;
+				c.addEventListener(resizeEvt, recalc, false);
+				b.addEventListener('DOMContentLoaded', recalc, false)
+			})(document, window);
+		</script>
+	</head>
+
+	<body style="background-color: #F8F8F8;padding-bottom: 2.7rem;">
+		<div class="main">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="img/good detail/30ee0c96580274c39743f5643d29039b.jpeg" /></div>
+					<div class="swiper-slide"><img src="img/good detail/5cf5ed661a2eb8f36cd6e56e8b19b42c.jpeg" /></div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+			<div class="xinxi">
+				<div class="xinxi_top">
+					<div class="goodsname"></div>
+					<div class="shoucangdiv">
+						<div class="shoucang">
+							<img src="img/good detail/btn_like_normal.png" class="show" />
+							<img src="img/good detail/btn_like _selected.png" style="display: none;" class="hide" />
+						</div>
+						<div class="shoucang_font" shoucangstatus=goods.shoucang+ '>收藏</div></div>
+								</div>
+								<div class="xinxi_middle">
+									<div class="middle_jiage"><strong></strong></div>
+						<div class="middle_zhekou">zhekou.toFixed(1)+'折</div>
+						<div class="middle_baoyou">包邮</div>
+						<div class="middle_renzheng">认证</div>
+					</div>
+					<div class="xinxi_bottom">
+						<span class="bottom_jiage">超市价:<span class="bottom_jiage_numeber">￥goods.oldprice+'.00</span></span>
+						<span class="bottom_kucun">仅剩<span class="bottom_yishou_number">1909</span>件</span>
+						<span class="bottom_yishou">已售100件</span>
+					</div>
+				</div>
+				<div class="jishiqidiv"></div>
+				<div class="tupiandiv">
+					<img src="img/good detail/30ee0c96580274c39743f5643d29039b.jpeg" />
+					<img src="img/good detail/5cf5ed661a2eb8f36cd6e56e8b19b42c.jpeg" />
+				</div>
+				<div class="meiweixinxi">
+					<div class="meiwei_biaoti">
+						<div class="hongsekuai"></div>美味信息</div>
+					<div class="meiwei_content">
+						<ul>
+							<li>供应商：<span>中国上海</span></li>
+							<li>生产日期：<span>见包装</span></li>
+							<li>保质期：<span>12个月</span></li>
+							<li>产地：<span>上海</span></li>
+						</ul>
+					</div>
+				</div>
+				<div class="miaoqinkoubei">
+					<div class="meiwei_biaoti">
+						<div class="hongsekuai"></div>喵亲口碑</div>
+					<div class="pingjiacontent">
+						<div class="user">
+							<div class="touxiangdiv"><img src="img/good detail/icon_wb_normal.png" /></div><span>黑人</span></div>
+						<div class="content">《ONE PIECE》（海贼王、航海王）简称“OP”，是日本漫画家尾田荣一郎作画的少年漫画作品。在《周刊少年Jump》1997年34号开始连载。描写了拥有橡皮身体戴草帽的青年路飞，以成为“海贼王”为目标和同伴在大海展开冒险的故事。</div>
+					</div>
+					<div class="pingjiacontent">
+						<div class="user">
+							<div class="touxiangdiv"><img src="img/good detail/icon_kj_pressed.png" /></div><span>白人</span></div>
+						<div class="content">描写了拥有橡皮身体戴草帽的青年路飞</div>
+					</div>
+					<div class="gengduopingjia">
+						<div class="gengduodiv">
+							<div class="gengduoimg"><img src="img/good detail/btn_pingjia.png" /></div>查看更多评价</div>
+					</div>
+				</div>
+				<div class="cainixihuan">
+					<div class="meiwei_biaoti">
+						<div class="hongsekuai"></div>猜你喜欢</div>
+					<div class="kuangjiadiv">
+						<div class="kuangjia">
+							<img src="img/sales/365120b54774f351f3247ca81affe5f4.jpg" class="salesimg" />
+							<div class="salesfont">顺丰包邮买包子买馒头买汉堡</div>
+							<div class="salesjiage"><span class="xianjia">￥47.00</span><span class="yuanjia">￥57.00</span><span class="zhekou">3.7折</span></div>
+						</div>
+					</div>
+					<div class="kuangjiadiv">
+						<div class="kuangjia">
+							<img src="img/sales/65efb092877cfbd8822037e76c262806.jpg" class="salesimg" />
+							<div class="salesfont">韩国农心辣味洋葱圈 多吃不发胖 好吃停不下来</div>
+							<div class="salesjiage"><span class="xianjia">￥107.00</span><span class="yuanjia">￥127.00</span><span class="zhekou">6折</span></div>
+						</div>
+					</div>
+					<div class="kuangjiadiv">
+						<div class="kuangjia">
+							<img src="img/sales/9594fb2e7250ca34ddb8bc990dafd237.jpg" class="salesimg" />
+							<div class="salesfont">[德芙] 心印巧克力礼盒53g 用心礼物首选</div>
+							<div class="salesjiage"><span class="xianjia">￥37.00</span><span class="yuanjia">￥57.00</span><span class="zhekou">7.7折</span></div>
+						</div>
+					</div>
+					<div class="kuangjiadiv">
+						<div class="kuangjia">
+							<img src="img/sales/f332a3e365bb3b43c8bb0cddd33ae970.jpg" class="salesimg" />
+							<div class="salesfont">[意大利elledi] 爱利地手指酥手指饼干200g</div>
+							<div class="salesjiage">
+								<sphttp://192.168.0.103:8020/snacks/img/good%20detail/30ee0c96580274c39743f5643d29039b.jpegan class="xianjia">￥107.00</span><span class="yuanjia">￥57.00</span><span class="zhekou">0.4折</span></div>
+						</div>
+					</div>
+					<div class="dilan">
+						<div class="dilan_left">
+							<div class="gouwuchediv">
+								<div class="gouwucheimg"><img src="img/good detail/btn_cart_normal.png" /></div>
+							</div>
+						</div>
+						<div class="dilan_right">
+							<div class="jiarudiv">加入购物车</div>
+						</div>
+					</div>
+				</div>
+				<div class="editInfor">
+						<div class="editInfor-cont">
+							<div class="editInfor-cont-picture"><img src="img/address/0b2fc5ec8c866bb9eab8f6ca19af53a13655.jpg"/></div>
+							<div class="editInfor-cont-curPrice">￥9.90</div>
+							<div class="editInfor-cont-stock">库存1200件</div>
+							<div class="editInfor-cont-taste">请选择口味</div>
+							<div class="editInfor-cont-close"><img src="img/good detail/btn_close.png"/></div>
+						</div>
+						<div class="editInfor-optTaste">
+							<div class="editInfor-optTaste-title">口味</div>
+							<ul class="editInfor-optTaste-ul">
+							</ul>
+						</div>
+						<div class="editInfor-number">
+							<div class="editInfor-number-title">购买数量</div>
+							<div class="editInfor-number-operate">
+								<input type="button" name="editInfor-number-reduce" id="editInfor-number-reduce" value="-" />
+								<input type="text" name="editInfor-number-text" id="editInfor-number-text" value="1" />
+								<input type="button" name="editInfor-number-add" id="editInfor-number-add" value="+" />
+							</div>
+						</div>
+						<div class="editInfor-confirm">确认</div>
+					</div>
+			</div>
+		</div>
+	</body>
+</html>

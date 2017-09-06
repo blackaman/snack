@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0" />
+		<title>购物车</title>
+		<link rel="stylesheet" type="text/css" href="css/shop.css"/>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="js/shop.js" type="text/javascript" charset="utf-8"></script>
+		 <script>
+            (function(b, c) {
+                var d = b.documentElement,
+                    resizeEvt = 'orientationchange' in c ? 'orientationchange' : 'resize',
+                    recalc = function() {
+                        var a = d.clientWidth
+                        if (!a) return;
+                        d.style.fontSize = (20 * (a / 320)) > 40 ? 40 + "px" : (20 * (a / 320)) + 'px'
+                    },
+                    anime = c.requestAnimationFrame || c.webkitRequestAnimationFrame || c.mozRequestAnimationFrame || c.oRequestAnimationFrame ||
+                function(e) {
+                    return setTimeout(e, 16.67)
+                };
+                if (!b.addEventListener) return;
+                c.addEventListener(resizeEvt, recalc, false);
+                b.addEventListener('DOMContentLoaded', recalc, false)
+            })(document, window);
+        </script>
+	</head>
+	<body style="background-color: #F8F8F8;margin-bottom: 2.7rem;">
+		<div class="main">
+			<div class="taobaodiv"><div class="taobaoleft"><img src="img/shop/icon_tb.png"/></div><span class="taobaomiddle">淘宝购物车</span><div class="tubiao"><img src="img/address/icon_arrow.png"/></div><span class="taobaorigth">别漏了这里的零食</span></div>
+			<div class="xiaomiaodiv"> <div class="taobaoleft"><img src="img/shop/icon_cat.png"/></div><span class="taobaomiddle">小喵购物车</span><span class="xiaomiaorigth">共<span class="heji-number">x</span>件商品</span></div>
+			<!--//底部-->
+			<div class="dilan">
+				<div class="gouxuandiv">
+					<div class="gouxuan">
+						<img src="img/address/normal.png"/>
+				<!--		<img src="img/address/selected.png" style="display: none;"/>-->
+					</div>
+					<spn class="quanxuan">全选</spn>
+				</div>
+				<div class="button_jiesuan">结算<span class="jiesuan-number"></span></div>
+				<div class="shuju"><span class="shuju_jine">186.00</span><span class="shuju_heji">合计:<span class="colorred">￥</span></span><div class="yunfei">不含运费</div></div>
+			</div>
+			<div class="content"></div>
+		</div>
+		<div class="tanchuang">
+            <div class="wenan">是否删除该商品</div>
+            <div class="queren">确认</div>
+            <div class="quxiao">取消</div>
+        </div>
+	</body>
+</html>

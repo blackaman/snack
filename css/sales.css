@@ -1,0 +1,248 @@
+*{
+	font-size: 14px;
+	font-family:"微软雅黑";
+}
+.maina{
+	max-width: 640px;
+	margin: 0px auto;
+	position: relative;
+	padding: 0 5px;
+	height: 100%;
+	overflow: hidden;
+}
+.mainai{
+	max-width: 640px;
+	margin: 0px auto;
+	position: relative;
+}
+.kuangjiadiv{
+	background-color: #FFFFFF;
+	width: 50%;
+	height: auto;
+	float: left;
+	position: relative;
+}
+.kuangjia{
+    border: 1px solid #E2E2E2;
+    margin: 5px 5px 5px 5px;
+}
+
+.salesimg {
+	width: 100%;
+	height: 7.15rem;
+}
+.salesfont{
+	margin: 7px;
+	height:38px;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+}
+.salesjiage{
+	border-top: 1px solid #F8F8F8;
+    padding: 5px 7px 5px 5px;
+    height: 18px;
+    line-height: 18px;
+}
+.xianjia,.xianjiaa{
+	color: #FF2D4B;
+	font-size: 13px;
+}
+.yuanjia,.yuanjiaa{
+	font-size: 11px;
+	color: #D6D6D6;
+	padding-left: 5px;
+	text-decoration: line-through;
+}
+.zhekou{
+    float: right;
+    width: 30px;
+    height: 17px;
+    line-height: 17px;
+    border-radius: 3px;
+    background-color: #FF2D4B;
+    text-align: center;
+    color: #ffffff;
+    font-size: 11px;
+}
+
+/*===收藏商品===*/
+.keeplanmu{
+	height: 37px;
+	border-bottom: 1px solid #F8F8F8;
+}
+.keeptizi{
+	width: 26px;
+    float: left;
+    padding: 6px 7px 6px 6px;
+}
+.keeptizi img{
+	width: 100%;
+}
+.keepfont{
+	float: left;
+	line-height: 35px;
+	font-size: 15px;
+	color:#000000;
+}
+.keepcontent,.keepcontent_wuxiao{
+	overflow: hidden;
+}
+.keepcontent_wuxiao{
+	opacity: 0.5;
+}
+/*===分类===*/
+.dinglan{
+	width: 100%;
+	height: 50px;
+	border-bottom: 1px solid #F8F8F8;
+}
+.fanhuiimg{
+	width: 7px;
+    padding-left: 10px;
+    float: left;
+    padding-top: 18px;
+}
+.fanhuiimg img{
+	width: 100%;
+}
+.dlbiaoti{
+	width: 80px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 50px;
+}
+.dlfont{
+	font-size: 18px;
+}
+.dlimg{
+	width: 10px;
+    padding: 0px 4px 3px;
+}
+.slidediv{
+    width: 100%;
+    margin: 0 -5px;
+    position: absolute;
+    background-color: #FFFFFF;
+    padding: 10px 0;
+    z-index: 12;
+}
+.zilei li{
+	width: 25%;
+	float: left;
+	list-style: none;
+	text-align: center;
+}
+.biaoqian{
+    width: 3.2rem;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #F8F8F8;
+    border-radius: 5px;
+    margin: 8px auto;
+    background-color: #E2E2E2;
+}
+/*===品牌团===*/
+.brandbiaoti{
+    width: 145px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 50px;
+}
+.gouwuche{
+	width: 18px;
+    position: absolute;
+    top: 16px;
+    right: 15px;
+}
+.gouwuche img{
+	width: 100%;
+}
+.brandimg{
+	width: 100%;
+	height: 6.5rem;
+	overflow: hidden;
+	position: relative;
+}
+.brandimg img
+{
+	width: 100%;
+}
+.brandcontent{
+	padding: 0 5px;
+}
+.brandhengtiao{
+	width: 100%;
+    position: absolute;
+    bottom: 0;
+    height:24px;
+    line-height:24px;
+    background-color: #353535;
+    opacity: 0.6;
+    color: #FFFFFF;
+}
+.tegong{
+	float: left;
+	padding-left: 11px;
+	font-size: 12px;
+}
+.daojishi{
+	float: right;
+	padding-right: 11px;
+	font-size: 12px;
+}
+.timeimg{
+	padding-top: 2px;
+    width: 12px;
+    float: right;
+    padding-right: 5px;
+}
+.timeimg img{
+	width: 100%;
+}
+.wushuju{
+	width: 168px;
+    margin: auto;
+    margin-top: 200px;
+}
+.empty{
+	width: 42px;
+	margin: auto;
+	padding-top: 50%;
+}
+.bgred{
+	background-color: #FF2D4B;
+}
+.keeptab{
+	background-color: #FF2D4B;
+	color: #FFFFFF;
+}
+.keepgoods_select{
+	display: none;
+	width: 20px;
+	position: absolute;
+	top:6%;
+	left: 6%;
+}
+.keepgoods_select img{
+	width: 100%;
+}
+.slected{
+	display: none;
+}
+.obj{
+	width: 100px;
+	height: 200px;
+	background-color: blue;
+}
+
+
+
+
+@media only screen and (max-width: 374px ) {
+	.salesfont{
+		height: 37px;
+	}
+}

@@ -1,0 +1,194 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-size: 14px;
+	font-family:"微软雅黑";
+}
+.main{
+	max-width: 640px;
+	margin: 0px auto;
+	position: relative;
+}
+.zhanghao{
+	border-top: 10px solid #F8F8F8;
+	border-bottom: 1px solid #F8F8F8;
+}
+.mima{
+	border-bottom: 1px solid #F8F8F8;
+}
+.zhanghao,.mima{
+	height: 43px;
+	padding: 0 7px;
+	background-color: #FFFFFF;
+	position:relative;
+}
+.zhanghaoimg{
+    width: 18px;
+    float: left;
+    padding: 12px 12px 7px 16px;
+}
+.zhanghaoimg img{
+	width: 100%;
+}
+.wenbenkuang{
+	line-height: 44px;
+}
+#inputmima,#inputzhanghao{
+	outline:none;
+	border: 0px;
+}
+.top_clear,.top_clear1{
+    width: 15px;
+    position: absolute;
+    top: 15px;
+    display: none;
+}
+.top_clear{
+	right: 22px;
+}
+.top_clear1{
+	right: 48px;
+}
+.keshi{
+    width: 19px;
+    position: absolute;
+    right: 20px;
+    top: 16px;
+}
+.top_clear img,.keshi img,.top_clear1 img{
+	width: 100%;
+}
+.clickbutoon{
+	height: 130px;
+    padding: 35px 22px 0 22px;
+}
+.butoon_dl{
+	height: 45px;
+    background-color: #FFFFFF;
+    padding-bottom: 10px;
+}
+#dl{
+	width: 100%;
+	height: 100%;
+	background-color: #FF2D4B;
+	color: #F8F8F8;
+	border-radius: 10px;
+	border: 1px solid;
+	-webkit-appearance: none;
+	font-size: 17px;
+}
+.dl_left{
+	float: left;
+}
+.dl_right{
+	float: right;
+}
+.sanfangkuang{
+	border-top: 1px solid #F8F8F8;
+	height: 100px;
+	margin: 0 20px;
+	position: relative;
+}
+.dlbiaoti{
+    position: absolute;
+    top: -10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.qq,.weixin,.weibo{
+	width: 33.33333%;
+	float: left;
+	padding-top: 30px;
+	text-align: center;
+}
+.qq img,.weixin img,.weibo img{
+	width: 40px;
+}
+/*===重置密码===*/
+.resetcontent{
+	width: 100%;
+	border-top: 10px solid #F8F8F8;
+}
+.resetcontent li
+{
+	width: 100%;
+	height: 47px;
+	line-height: 47px;
+	list-style: none;
+	border-bottom: 1px solid #F8F8F8;
+}
+.reset_icon{
+	width: 23px;
+	padding: 10px 10px 0 15px;
+	float: left;
+}
+.reset_icon img,.reset_ricon img,.imgkuang img,.reset_fresh img{
+	width: 100%;
+	display: block;
+}
+#reset_phone,#reset_img,#reset_message,#reset_mima
+{
+	width:130px;
+	font-size:14px;
+	-webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+	border: 0px;
+}
+.imgkuang{
+    width: 75px;
+    height: 35px;
+    margin: 6px 10px 6px 0;
+    float: right;
+}
+.reset_ricon,.reset_fresh{
+	width: 23px;
+	padding-right:15px;
+	padding-top:14px;
+	float: right;
+}
+.button_get{
+	position: relative;
+	width: 70px;
+    height: 31px;
+    line-height: 30px;
+    border: 1px solid #FF2D4B;
+    text-align: center;
+    float: right;
+    margin: 7px 15px 5px 0;
+    border-radius: 5px;
+    color: #FF2D4B;
+    font-size: 12px;
+}
+
+/*===注册===*/
+.button_register{
+	margin: 30px 15px;
+    height: 45px;
+    line-height: 45px;
+    background-color: #FF2D4B;
+    color: #F8F8F8;
+    border-radius: 10px;
+    border: 1px solid;
+    -webkit-appearance: none;
+    text-align: center;
+    font-size: 17px;
+}
+.dinglan{
+	width: 100%;
+	height: 50px;
+	border-bottom: 1px solid #F8F8F8;
+}
+.fanhuiimg{
+	width: 8px;
+    padding-left: 15px;
+    float: left;
+    padding-top: 16px;
+}
+.fanhuiimg img{
+	width: 100%;
+}
+.biaoti{
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 50px;
+}

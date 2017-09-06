@@ -1,0 +1,23 @@
+[
+    {
+        "id": 0,
+        "tittle": "夏日的诱惑，低至5折",
+        "zhekou": "5折起",
+        "img": "img/pinpaituan.jpg",
+        "time": "2016,9,1,0,0,0"
+    },
+    {
+        "id": 13,
+        "tittle": "百草香味各种零食",
+        "zhekou": "7.5折起",
+        "img": "img/banner3.jpg",
+        "time": "2016,6,17,5,32,1"
+    },
+   	{
+        "id": 21,
+        "tittle": "三只松鼠专卖场",
+        "zhekou": "9折起",
+        "img": "img/pinpaituan2.jpg",
+        "time": "2016,8,11,12,52,1"
+    }
+]

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>我的收藏</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0" />
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/sales.css" />
+		<link rel="stylesheet" type="text/css" href="css/subject.css"/>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="js/keep.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+            (function(b, c) {
+                var d = b.documentElement,
+                    resizeEvt = 'orientationchange' in c ? 'orientationchange' : 'resize',
+                    recalc = function() {
+                        var a = d.clientWidth
+                        if (!a) return;
+                        d.style.fontSize = (20 * (a / 320)) > 40 ? 40 + "px" : (20 * (a / 320)) + 'px'
+                    },
+                    anime = c.requestAnimationFrame || c.webkitRequestAnimationFrame || c.mozRequestAnimationFrame || c.oRequestAnimationFrame ||
+                function(e) {
+                    return setTimeout(e, 16.67)
+                };
+                if (!b.addEventListener) return;
+                c.addEventListener(resizeEvt, recalc, false);
+                b.addEventListener('DOMContentLoaded', recalc, false)
+            })(document, window);
+        </script>
+	</head>
+	<body>
+		<div class="main">
+			<!--<div class="keepheader">
+				<div class="keepheaderl"><img src="img/address/btn_back_normal.png"/></div>
+					<div class="keepleixing">
+						<div class="keepgoods keeptab">商品</div>
+						<div class="keepsubject">专题</div>
+					</div>
+				<div class="keepheaderr">编辑</div>
+			</div>
+			<div class="keepCont">
+				<div class="keeplanmu">
+					<div class="keeptizi"><img src="img/icon_dot.png"/></div>
+					<div class="keepfont">有效商品</div>
+				</div>
+				<div class="keepcontent"></div>
+				<div class="keeplanmu">
+					<div class="keeptizi"><img src="img/keep_failure.png"/></div>
+					<div class="keepfont">无效商品</div>
+				</div>
+				<div class="keepcontent_wuxiao"></div>
+			</div>
+			<div class="keepsubjectdiv" style="display: none;"></div>
+			<div class="keep-delete"><div class="keep-deleteFont">删除</div></div>-->
+			<div class="obj">你好</div>
+		</div>
+	</body>
+</html>

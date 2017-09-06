@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0" />
+		<title>零食小喵的订单</title>
+		<link rel="stylesheet" type="text/css" href="css/orderlist.css"/>
+		<link rel="stylesheet" type="text/css" href="css/orderpublic.css"/>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<script src="js/jquery-2.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/order.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+            (function(b, c) {
+                var d = b.documentElement,
+                    resizeEvt = 'orientationchange' in c ? 'orientationchange' : 'resize',
+                    recalc = function() {
+                        var a = d.clientWidth
+                        if (!a) return;
+                        d.style.fontSize = (20 * (a / 320)) > 40 ? 40 + "px" : (20 * (a / 320)) + 'px'
+                    },
+                    anime = c.requestAnimationFrame || c.webkitRequestAnimationFrame || c.mozRequestAnimationFrame || c.oRequestAnimationFrame ||
+                function(e) {
+                    return setTimeout(e, 16.67)
+                };
+                if (!b.addEventListener) return;
+                c.addEventListener(resizeEvt, recalc, false);
+                b.addEventListener('DOMContentLoaded', recalc, false)
+            })(document, window);
+        </script>
+	</head>
+	<body>
+		<div class="main">
+			<div class="dinglan">
+				<div class="fanhuiimg"><img src="img/address/btn_back_normal.png"/></div>
+				<div class="dlbiaoti"style="width: 128px;">零食小喵的订单</div>
+			</div>
+			<ul class="orderstatus">
+				<li tittle="全部">全部</li>
+				<li tittle="待付款">待付款</li>
+				<li tittle="待发货">待发货</li>
+				<li tittle="待收货">待收货</li>
+				<li tittle="待评价">待评价</li>
+			</ul>
+			<div class="content"></div>
+		</div>
+		<div class="toast"><p class="toast_banben">提醒卖家发货成功</p></div>
+		<div class="tanchuangbg"></div>
+		<!--取消订单-->
+		<div class="exittanchuang">
+			<div class="settanchuang_content">
+				<p>你是否要取消订单？</p>
+			</div>
+			<div class="kftanchuang_button">
+				<div class="button_guang"><p>取消</p></div>
+				<div class="button_xiaci"><p>确定</p></div>
+			</div>
+		</div>
+		<!--联系客服-->
+		<div class="kftanchuang">
+			<div class="kftanchuang_content">
+				<p>客服电话:<span>0592-5413550</span></p>
+				<p>客服微信:<span id="weixin">黑人卸帐篷</span></p>
+			</div>
+			<div class="kftanchuang_button">
+				<div class="button_left"><p>复制微信号</p></div>
+				<div class="button_right"><a href="tel:0592-5413550">拨打电话</a></div>
+			</div>
+		</div>
+		<!--确认收货-->
+		<div class="shouhuotanchuang">
+			<div class="settanchuang_content">
+				<p>你是否要确认收货？</p>
+			</div>
+			<div class="kftanchuang_button">
+				<div class="button_guang"><p>取消</p></div>
+				<div class="button_xiaci"><p>确定</p></div>
+			</div>
+		</div>
+		<!--删除订单-->
+		<div class="deletetanchuang">
+			<div class="settanchuang_content">
+				<p>你是否要确认删除订单？</p>
+			</div>
+			<div class="kftanchuang_button">
+				<div class="button_guang"><p>取消</p></div>
+				<div class="button_xiaci"><p>确定</p></div>
+			</div>
+		</div>
+	</body>
+</html>
